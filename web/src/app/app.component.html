@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+   <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+ </button>
+ <span class="example-spacer"></span>
+ <span>Estudiantes</span>
+</mat-toolbar>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>
+
